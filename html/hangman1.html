@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset = "UTF-8"/>
+  <link href="../css/hangman.css" rel="stylesheet" type="text/css">
+  <title>Hangman</title>
+</head>
+
+<body>
+	<p id="banner" style="left: 0px; position: fixed;">*** HANGMAN! ***</p>
+  <br>
+	<div id="instruction">
+			<ol>
+				<li>The main idea of this game is to guess the word letter by letter.
+		Player has 6 attempts "lives" to enter a letter and 2 minutes to finish the game.</li>
+			
+				<li>Enter a letter of the alphabet and click "Check It!" button.</li>
+				<li>If the letter is contained in the word, it will appear and will be removed from the list of alphabet. After that guess an another letter and enter it.</li>
+				<li>If the letter is not contained in the word, it won't appear. You can enter an another letter.</li>
+				<li>The game continues until:
+				the word is guessed (all letters are revealed) – WINNER or,
+				all attempts were used and word isn't guessed – LOSER.</li>
+			
+			</ol>
+	</div>
+	
+	<a href="../hangman.html"><button id="play">Play</button>
+	</a><br>
+	<script src="../js/hangman.js"></script>
+</body>
+</html>

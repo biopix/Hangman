@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset = "UTF-8"/>
+  <link href="css/hangman.css" rel="stylesheet" type="text/css">
+  <title>Hangman</title>
+</head>
+
+<body>
+  <p id="banner" style="left:0px; position: fixed;">*** HANGMAN! ***</p>
+<nav>
+	<div id="menu">
+	<p>Menu</p>
+	<button id="rule" onclick="window.location.href='html/hangman1.html';">How to play</button>
+	<p>Choose the level:</p>
+	<input id="check1" name="check1" type="button" onClick="check1();" value="Easy level"/><br>
+	<input id="check2" name="check2" type="button" onClick="check2();" value="Difficult level"/>
+	</div>
+ </nav>
+  <div id="game">
+	<p style="display:inline-block;" >Time : </p> 
+	<p id="timer" style="display:inline-block;" > </p>
+	<p id="life" style="display:inline-block;" >Lives : </p>
+	<p id="lives" style="display:inline-block;"></p>
+	<p>Enter a letter:</p>
+	<input id="guess" type="text" name="guess" maxlength="1" size="2" onkeyup="toUpper()"><br>
+	<input id="check" name="check" type="button" onClick="check();" value="Check It!">
+	<p id="letters"></p>
+	<p id="alphabet"></p>
+	<p id="losewin"></p>
+	<button id="restart" onclick="window.location.href = 'index.html';">New Game</button>
+	<input id="check3" name="check3" type="button" onClick="check3();" value="Start"/>
+	<br><br>
+  </div>
+ 
+  <footer>
+  <small>&copy; Copyright 2019. IPD-18 - All Rights Reserved. Created by: Shahram, Mahnaz, Pavel, Halina.</small>
+  </footer>
+  <script
+  src="http://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="js/hangman.js"></script>
+</body>
+</html>

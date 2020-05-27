@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset = "UTF-8"/>
+  <link href="css/hangman.css" rel="stylesheet" type="text/css">
+  <title>Hangman</title>
+</head>
+
+<body>
+  <p id="banner" style="left: 0px; position: fixed;">*** HANGMAN! ***</p><br>
+  
+	
+	 <button id="instruction"><a href="html/hangman1.html" target="blank">How to play</a></button>
+	<br>
+
+  
+  <div id="game">
+	<p style="display:inline-block;" >Time : </p> 
+	<p id="timer" style="display:inline-block;" > </p>
+
+  
+  
+	<p id="life" style="display:inline-block;" >Lives : </p>
+	<p id="lives" style="display:inline-block;"></p>
+	<p>Enter a letter:</p>
+	<input id="guess" type="text" name="guess" maxlength="1" size="2" onkeyup="toUpper()"><br>
+	<input id="check" name="check" type="button" onClick="check();" value="Check It!">
+	<p id="letters"></p>
+	<p id="alphabet"></p>
+	<p id="losewin"></p>
+	   <input type="button" onclick="go('hard');" value="Hard Mode" >
+     <input type="button" onclick="go('easy');" value="Easy Mode" >
+    <a href="hangman.html" id="restart">New Game </a>
+	<br><br>
+  </div>
+  <script
+  src="http://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="js/hangman.js"></script>
+</body>
+</html>

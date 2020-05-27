@@ -1,0 +1,65 @@
+
+body{background-image: url('../images/background.jpg');
+	font-size:22px; 
+	font-family:Stencil Std, fantasy; 
+	color:#29053E;
+	}
+a:link{text-decoration:none;
+	}
+#banner{font-size:30px;
+		color:yellow; 
+		letter-spacing:10px;
+		animation:colorText 8s infinite;
+	}
+	
+@keyframes colorText{
+		0%{color: #FFF8DC;}
+		49%{color: #7FFF00;}
+		50%{color: #FF4500;}
+		99%{color:#FFFF00;}
+		100%{color: #FFD700;}
+}
+	
+#game,#instruction{display:block;
+		margin-left:350px;
+		margin-right:350px;
+		text-align:center;
+		background-color:rgba(255, 255, 255, 0.5);
+		border: 3px solid blue;
+		border-bottom: 4px solid transparent;
+		border-image: linear-gradient(to right, #c966f7, yellow);
+		border-image-slice: 1;
+	}
+#timer{margin-right:60px;
+ color:yellow;
+}
+#guess{height:30px;
+		width:30px;
+	}
+
+#check, #restart, #play{height:30px;
+		width:100px; 
+		border: 3px solid blue;
+		border-bottom: 4px solid transparent;
+		border-image: linear-gradient(to right, #c966f7, yellow);
+		border-image-slice: 1; 
+		
+	}
+	#play{
+		margin-left:900px;
+		margin-top:40px;
+	}
+#alphabet,#letters{color:#340D4A; 
+		letter-spacing: 4px;
+	}
+
+#lives{color:yellow;  
+	}
+ 
+ /*css for instruction*/
+ #instruction{margin-top:100px; 
+				font-family:"Times New Roman", Times, serif; 
+				font-size:16px;
+				text-align:left;				
+	}
+	 
